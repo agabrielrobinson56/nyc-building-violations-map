@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Building Violations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #EDE8D0;
+            color: #333;
+        }
+
+        .news-story {
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .headline {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .byline {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .dateline {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .story-text {
+            font-size: 1.05em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .map-subheading {
+            font-size: 1em;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .map-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 567px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .dataset-link {
+            font-size: 0.95em;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dataset-link a {
+            color: #1a0dab;
+            text-decoration: none;
+        }
+
+        .dataset-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="news-story">
+    <div class="headline">Manhattan, Brooklyn, and Queens Lead NYC in Building Violations</div>
+    <div class="byline">By Ajhada Gabriel</div>
+    <div class="dateline">New York, Dec. 22, 2025</div>
+
+    <div class="story-text">
+        A new analysis of building violations across New York City highlights hotspots in Manhattan, Brooklyn, and Queens. 
+        Manhattan neighborhoods like the West Village (10014) and SoHo (10013) report hundreds of violations, 
+        while Brooklyn areas including Ocean Hill and Bedford-Stuyvesant (11216, 11238, 11233) also show high counts. 
+        Queens’ Long Island City and Jackson Heights (11372, 11363) follow closely behind.
+
+        The choropleth map below visualizes these clusters, providing city officials and communities with insight 
+        on where inspections and safety measures are most needed.
+    </div>
+
+    <div class="map-subheading">
+        Highest Clusters by Borough: Manhattan, Brooklyn, and Queens
+    </div>
+
+    <div class="map-container">
+        <iframe title="NYC Building Violations Cluster in Manhattan, Brooklyn, and Queens" 
+                aria-label="Choropleth map showing NYC building violation clusters by ZIP code. Manhattan, Brooklyn, and Queens have the highest counts, with hotspots in West Village, SoHo, Bedford-Stuyvesant, Ocean Hill, Long Island City, and Jackson Heights." 
+                id="datawrapper-chart-RbvAo" 
+                src="https://datawrapper.dwcdn.net/RbvAo/1/" 
+                scrolling="no" frameborder="0" 
+                style="border: none;" 
+                width="600" height="567" data-external="1">
+        </iframe>
+    </div>
+
+    <div class="dataset-link">
+        <p><a href="https://docs.google.com/spreadsheets/d/1SdC7vPrkCBfsUVRvqgDO_5sheh6pMYchGrXD93yCMBw/edit#gid=0" target="_blank">
+        View full dataset</a></p>
+    </div>
+</div>
+
+</body>
+</html>
